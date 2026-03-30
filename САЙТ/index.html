@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дэйбэт</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+</head>
+<body>
+
+<!-- ===== СЕКЦИЯ 1: ГЛАВНАЯ ===== -->
+<section class="daibat-section">
+    <div class="container">
+        <div class="background-image"></div>
+
+        <!-- Звёзды -->
+        <div class="stars-container">
+            <svg class="star" style="left: 5%; top: 5%;" viewBox="0 0 100 100">
+                <polygon points="50,10 61,40 92,40 67,60 78,90 50,70 22,90 33,60 8,40 39,40"/>
+            </svg>
+            <svg class="star" style="left: 15%; top: 8%;" viewBox="0 0 100 100">
+                <polygon points="50,10 61,40 92,40 67,60 78,90 50,70 22,90 33,60 8,40 39,40"/>
+            </svg>
+            <svg class="star" style="left: 25%; top: 3%;" viewBox="0 0 100 100">
+                <polygon points="50,10 61,40 92,40 67,60 78,90 50,70 22,90 33,60 8,40 39,40"/>
+            </svg>
+            <svg class="star" style="left: 35%; top: 6%;" viewBox="0 0 100 100">
+                <polygon points="50,10 61,40 92,40 67,60 78,90 50,70 22,90 33,60 8,40 39,40"/>
+            </svg>
+            <svg class="star" style="left: 8%; top: 20%;" viewBox="0 0 100 100">
+                <polygon points="50,10 61,40 92,40 67,60 78,90 50,70 22,90 33,60 8,40 39,40"/>
+            </svg>
+            <svg class="star" style="left: 12%; top: 25%;" viewBox="0 0 100 100">
+                <polygon points="50,10 61,40 92,40 67,60 78,90 50,70 22,90 33,60 8,40 39,40"/>
+            </svg>
+            <svg class="star" style="left: 20%; top: 22%;" viewBox="0 0 100 100">
+                <polygon points="50,10 61,40 92,40 67,60 78,90 50,70 22,90 33,60 8,40 39,40"/>
+            </svg>
+            <svg class="star" style="left: 85%; top: 15%;" viewBox="0 0 100 100">
+                <polygon points="50,10 61,40 92,40 67,60 78,90 50,70 22,90 33,60 8,40 39,40"/>
+            </svg>
+            <svg class="star" style="left: 90%; top: 25%;" viewBox="0 0 100 100">
+                <polygon points="50,10 61,40 92,40 67,60 78,90 50,70 22,90 33,60 8,40 39,40"/>
+            </svg>
+            <svg class="star" style="left: 80%; top: 40%;" viewBox="0 0 100 100">
+                <polygon points="50,10 61,40 92,40 67,60 78,90 50,70 22,90 33,60 8,40 39,40"/>
+            </svg>
+            <svg class="star" style="left: 95%; top: 50%;" viewBox="0 0 100 100">
+                <polygon points="50,10 61,40 92,40 67,60 78,90 50,70 22,90 33,60 8,40 39,40"/>
+            </svg>
+            <svg class="star" style="left: 30%; top: 50%;" viewBox="0 0 100 100">
+                <polygon points="50,10 61,40 92,40 67,60 78,90 50,70 22,90 33,60 8,40 39,40"/>
+            </svg>
+            <svg class="star" style="left: 50%; top: 55%;" viewBox="0 0 100 100">
+                <polygon points="50,10 61,40 92,40 67,60 78,90 50,70 22,90 33,60 8,40 39,40"/>
+            </svg>
+            <svg class="star" style="left: 70%; top: 45%;" viewBox="0 0 100 100">
+                <polygon points="50,10 61,40 92,40 67,60 78,90 50,70 22,90 33,60 8,40 39,40"/>
+            </svg>
+            <svg class="star" style="left: 40%; top: 65%;" viewBox="0 0 100 100">
+                <polygon points="50,10 61,40 92,40 67,60 78,90 50,70 22,90 33,60 8,40 39,40"/>
+            </svg>
+        </div>
+
+        <!-- Контент -->
+        <div class="content-wrapper">
+            <div class="text-content">
+                <h1 class="title">Дэйбэт</h1>
+                <p class="subtitle">Создаём очки <nobr>дневного зрения</nobr> <nobr>специально для вас</nobr></p>
+            </div>
+            <div class="illustration-container">
+                <img class="Bat-svg" src="images/bat.svg" alt="Bat">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ 2: КРИСТАЛЛЫ (ГОРИЗОНТАЛЬНЫЙ СКРОЛЛ) ===== -->
+<section class="scroll">
+    <div class="scene">
+        <!-- НАДПИСИ -->
+        <div class="titles">
+            <p class="big-title">Кристаллы</p>
+            <p class="small-title">Важные ингредиенты<br> для идеального <br>дневного зрения</p>
+        </div>
+
+        <!-- ФОН -->
+        <img src="assets/bg.png" class="bg">
+
+        <!-- ДЕРЕВЬЯ -->
+        <img src="assets/wood.svg" class="tree t1">
+        <img src="assets/wood.svg" class="tree t3">
+        <img src="assets/wood.svg" class="tree t5">
+        <img src="assets/wood.svg" class="tree t7">
+        <img src="assets/wood2.svg" class="tree t2">
+        <img src="assets/wood2.svg" class="tree t4">
+        <img src="assets/wood2.svg" class="tree t6">
+        <img src="assets/wood2.svg" class="tree t8">
+
+        <!-- СТЕНА С ДЫРОЙ -->
+        <img src="assets/wall.png" class="wall">
+
+        <!-- КРИСТАЛЛЫ -->
+        <img src="assets/crystal.svg" class="crystal c1">
+        <img src="assets/crystal.svg" class="crystal c2">
+        <img src="assets/crystal.svg" class="crystal c3">
+
+        <!-- МЫШКА -->
+        <img src="assets/bat.gif" class="bat">
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ 3: ВАРИМ ЛИНЗЫ ===== -->
+<section class="cooking-section">
+    <div class="scene-cooking">
+        <!-- фон -->
+        <img class="bg-cooking" src="images/bg.png" />
+
+        <!-- интерактив -->
+        <div class="objects">
+            <!-- drop зоны -->
+            <div class="dropzone burner-zone" data-drop="burner"></div>
+            <div class="dropzone molds-zone" data-drop="molds"></div>
+            <div class="dropzone bottles-zone" data-drop="bottles"></div>
+
+            <!-- декор -->
+            <img class="sandBox" src="images/sandBox.svg" />
+            <img class="crystalsbox" src="images/crystalsbox.svg" />
+
+            <!-- ГОРЕЛКА -->
+            <img class="burner" src="images/burner.gif" />
+            <img class="stand" src="images/stand.svg" />
+
+            <!-- бутылки с water -->
+            <img class="bottle-1 draggable" src="images/bottleWater.svg" draggable="true" data-type="water" data-original-pos="bottle-1" />
+            <img class="bottle-2 draggable" src="images/bottleWater.svg" draggable="true" data-type="water" data-original-pos="bottle-2" />
+
+            <!-- ингредиенты -->
+            <img class="sand draggable" src="images/sand.svg" draggable="true" data-type="sand" />
+            <img class="interactiveCrystals draggable" src="images/interactiveCrystals.svg" draggable="true" data-type="crystals" />
+
+            <!-- РЕЗУЛЬТАТЫ -->
+            <img class="bottleSand hidden draggable" src="images/bottleSand.svg" draggable="true" data-type="sandBottle" data-original-pos="bottle-1" />
+            <img class="bottleCrystals hidden draggable" src="images/bottleCrystals.svg" draggable="true" data-type="crystalBottle" data-original-pos="bottle-2" />
+            <img class="bottleLenses hidden draggable" src="images/bottleLenses.svg" draggable="true" data-type="result" />
+
+            <!-- ФОРМЫ -->
+            <img class="molds" src="images/molds.svg" />
+
+            <!-- линзы (результат) -->
+            <img class="lensesHot-1 hidden" src="images/lensesHot.svg" />
+            <img class="lensesCold-1 hidden" src="images/lensesCold.svg" />
+            <img class="lensesHot-2 hidden" src="images/lensesHot.svg" />
+            <img class="lensesCold-2 hidden" src="images/lensesCold.svg" />
+        </div>
+
+        <!-- ТЕКСТ -->
+        <div class="ui">
+            <p class="title-cooking">Варим линзы</p>
+            <p class="subtitle-cooking">Смешивайте<br>ингредиенты<br>для изготовления<br>очков</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== СЕКЦИЯ 4: ДИЗАЙН ОЧКОВ И ФИНАЛ ===== -->
+<section class="glasses-section">
+    <!-- 1. ФОН -->
+    <div class="bg-layer"></div>
+
+    <!-- 3. ТЕКСТ -->
+    <div class="text-layer">
+        <p class="title-main">Дизайн очков</p>
+        <p class="title-sub">Делаем оправы,<br>достойные ваших <br> прекрасных мордочек</p>
+    </div>
+
+    <!-- 2. ИНТЕРАКТИВ -->
+    <div class="ui-layer">
+        <img id="glasses" src="glasses/orange.svg" alt="">
+        <button id="generateBtn">Создать очки</button>
+    </div>
+</section>
+
+<section class="daibat-section-final">
+    <!-- Фон -->
+    <div class="background-image-final"></div>
+
+    <!-- Текст -->
+    <div class="titles-final">
+        <p class="big-title-final">Готово!<br>Надевайте</p>
+        <p class="small-title-final">и покоряйте день<br> вместе с Дэйбэт.</p>
+    </div>
+
+    <!-- МЫШКА -->
+    <div class="illustration-container-final">
+        <svg class="bat-svg-final" viewBox="0 0 3140 1587" xmlns="http://www.w3.org/2000/svg" width="3140" height="1587" fill="none">
+            <g id="wing-left">
+                <path d="M1274.18 387.24C1237.98 370.863 1188.09 348.802 1133.36 326.06C1023.53 280.432 895.282 232.546 818.457 221.731C800.246 219.167 776.455 221.101 748.335 226.84C720.32 232.558 688.516 241.943 654.498 253.896C586.463 277.803 510.129 311.783 438.484 346.534C366.871 381.27 300.097 416.702 251.217 443.456C228.494 455.893 209.645 466.452 195.985 474.187C265.804 472.829 334.232 469.455 402.9 481.691C481.346 495.669 560.239 529.935 644.146 609.786L644.147 609.788C668.956 633.415 687.621 648.653 703.562 675.068C718.962 700.588 731.759 736.294 746.856 800.199C848.887 785.307 954.155 826.789 1027.19 886.228C1064.61 916.681 1094.01 952.199 1110.3 987.947C1124.99 1020.17 1129.25 1053.22 1118.17 1082.8C1166.35 1087.93 1202.64 1103.4 1229.54 1125.41C1258.26 1148.92 1275.8 1179.47 1285.92 1211.61C1300.49 1257.86 1299.89 1307.89 1294.95 1346.59C1304.77 1333.72 1316.65 1321.48 1330.02 1312.88C1342.93 1304.59 1357.71 1299.41 1373.55 1300.95C1387.68 1302.33 1401.7 1308.96 1415.25 1321.8L1461.32 1283.93L1504.98 1207.16L1549.87 1081.63L1537.79 1076.52L1530.84 1073.58L1637.14 853.169C1634.72 852.538 1631.85 851.767 1628.57 850.837C1617.66 847.742 1602.21 842.931 1583.97 836.042C1547.51 822.278 1499.71 800.151 1454.6 766.715C1409.48 733.272 1366.84 688.366 1341.11 629.02C1315.89 570.837 1307.12 499.24 1327.58 411.804C1324.98 410.584 1321.46 408.935 1317.1 406.909C1306.95 402.192 1292.28 395.427 1274.18 387.24Z" fill="#30254C" stroke="url(#paint0_linear_449_2)" stroke-width="14.9648"/>
+                <g filter="url(#filter0_d_449_2)">
+                    <path d="M1656.02 853.994C1656.02 853.994 1252.03 764.241 1343.21 411.528C1343.21 411.528 877.667 186.439 771.522 219.149C754.185 222.395 640.52 244.444 448.05 338.924C250.815 435.702 166.23 482.229 167.147 483.044C167.147 483.044 395.527 379.375 471.291 351.611C543.153 325.264 751.574 277.939 761.792 276.329C882.702 257.476 1273.66 443.832 1273.66 443.832C1273.66 443.832 1339.85 756.863 1316.35 768.014C1316.35 768.014 1559.92 841.425 1622.01 924.735L1656.11 854.034L1656.02 853.994Z" fill="#281E39"/>
+                </g>
+            </g>
+
+            <g id="wing-right">
+                <path d="M2222.58 844.99C2260.33 850.686 2312.06 858.868 2368.03 868.812C2480.29 888.756 2608.57 915.621 2675.72 943.51C2708.02 956.928 2747.39 992.359 2788.73 1039.3C2829.81 1085.97 2872.02 1143.04 2910.08 1198.49C2948.12 1253.92 2981.94 1307.61 3006.25 1347.45C3016.1 1363.6 3024.39 1377.47 3030.76 1388.25C2976.9 1356.1 2925.08 1323.5 2864.85 1300.71C2794.96 1274.27 2713.68 1260.94 2603.5 1275.29L2603.5 1275.29C2570.86 1279.56 2547.76 1281.08 2520.69 1291.21C2494.45 1301.02 2464.71 1318.76 2417.75 1354.05C2344.75 1297.67 2238.4 1277.04 2147.92 1282.93C2101.65 1285.93 2058.91 1295.9 2026.41 1312.04C1997.69 1326.31 1975.87 1345.99 1967.99 1370.86C1889.95 1335.64 1826.41 1344.83 1777.71 1371.57L1646.4 1169.65L1680.05 986.55C1682.28 987.222 1684.92 988.002 1687.96 988.86C1698.31 991.783 1713.21 995.64 1731.45 999.403C1767.91 1006.92 1817.93 1014.1 1871.96 1012.63C1978.66 1009.72 2102.46 972.88 2166.7 836.857C2169.44 837.237 2173.13 837.754 2177.7 838.403C2188.34 839.916 2203.71 842.142 2222.58 844.99Z" fill="#231C30" stroke="url(#paint1_linear_449_2)" stroke-width="14.9648"/>
+                <g filter="url(#filter1_d_449_2)">
+                    <path d="M1676.02 956.811C1676.02 956.811 2046.16 1081.42 2165.71 808.298C2165.71 808.298 2658.5 871.98 2725.1 941.696C2737.12 951.705 2815.5 1017.84 2917.12 1167.35C3021.27 1320.54 3063.2 1389.54 3062.03 1389.66C3062.03 1389.66 2936.86 1217.79 2891.73 1165.13C2848.93 1115.17 2708.95 989.377 2701.7 983.677C2615.82 916.354 2203.43 861.12 2203.43 861.12C2203.43 861.12 1980.35 1036.67 1992.96 1054.67C1992.96 1054.67 1759.29 992.219 1664.55 1018.73L1675.93 956.796L1676.02 956.811Z" fill="#281E39"/>
+                </g>
+            </g>
+
+            <g id="body">
+                <path d="M1790.18 834.505C1770.38 819.413 1737.35 809.144 1682.08 815.518C1626.86 821.887 1550.17 844.812 1444.01 895.167C1355.81 953.581 1317.71 1046.34 1303.23 1136.97C1288.78 1227.49 1298.05 1314.9 1303.85 1361.5C1309.18 1383.45 1317.91 1404.53 1334.69 1423.84C1351.6 1443.3 1377.07 1461.43 1416.58 1476.64C1456.79 1492.12 1487.4 1500.42 1513.11 1500.77C1538.38 1501.12 1559.27 1493.79 1580.22 1476.99C1620.69 1444.53 1627.52 1404.95 1632.95 1356.37C1634.33 1344.09 1632.56 1327.83 1630.27 1314.17C1629.15 1307.44 1627.93 1301.51 1626.99 1297.28C1626.52 1295.16 1626.13 1293.47 1625.85 1292.32C1625.76 1291.95 1625.68 1291.63 1625.62 1291.37C1623.64 1287.24 1623.35 1282.51 1623.76 1278.01C1624.21 1273.02 1625.6 1267.4 1627.62 1261.41C1631.66 1249.4 1638.6 1234.77 1647.34 1218.55C1664.84 1186.05 1690.2 1146.02 1716.08 1105.82C1742.04 1065.5 1768.52 1025 1788.55 991.208C1798.57 974.315 1806.87 959.269 1812.64 946.885C1818.59 934.121 1821.28 925.349 1821.28 920.524L1821.28 919.913L1821.38 919.312C1821.39 919.298 1821.39 919.273 1821.39 919.239C1821.41 919.159 1821.43 919.027 1821.45 918.843C1821.5 918.474 1821.57 917.9 1821.66 917.142C1821.82 915.626 1822.01 913.378 1822.11 910.559C1822.32 904.907 1822.17 897.039 1820.74 888.217C1817.88 870.531 1809.99 849.604 1790.18 834.505Z" fill="#2E203C" stroke="url(#paint2_linear_449_2)" stroke-width="14.9648"/>
+            </g>
+
+            <g id="head">
+                <g filter="url(#filter2_d_449_2)">
+                    <path d="M1819.96 1136.43C1778.37 1161.15 1735.14 1162.07 1694.18 1136.43C1645 1105.65 1694.28 1040.14 1655.08 998.464C1619.82 960.972 1531.5 945.096 1531.5 945.096L1554.96 831.496L1531.5 653.598L1542.36 457.768C1542.36 457.768 1645.84 516.903 1679.48 591.96C1707.24 653.891 1722.93 753.76 1722.93 753.76C1745.33 745.414 1759.59 745.414 1784.02 753.76C1784.02 753.76 1800.33 655.346 1832.22 591.96C1866.68 523.461 1967.99 446.211 1967.99 446.211V653.598L1955.74 831.496L1996.5 945.096C1996.5 945.096 1903.94 960.096 1866.06 998.464C1825.29 1039.77 1870.55 1106.37 1819.96 1136.43Z" fill="#4B2F53"/>
+                    <path d="M1819.96 1136.43C1778.37 1161.15 1735.14 1162.07 1694.18 1136.43C1645 1105.65 1694.28 1040.14 1655.08 998.464C1619.82 960.972 1531.5 945.096 1531.5 945.096L1554.96 831.496L1531.5 653.598L1542.36 457.768C1542.36 457.768 1645.84 516.903 1679.48 591.96C1707.24 653.891 1722.93 753.76 1722.93 753.76C1745.33 745.414 1759.59 745.414 1784.02 753.76C1784.02 753.76 1800.33 655.346 1832.22 591.96C1866.68 523.461 1967.99 446.211 1967.99 446.211V653.598L1955.74 831.496L1996.5 945.096C1996.5 945.096 1903.94 960.096 1866.06 998.464C1825.29 1039.77 1870.55 1106.37 1819.96 1136.43Z" stroke="url(#paint3_linear_449_2)" stroke-width="10.4754"/>
+                </g>
+                <path d="M1798.5 1088.52H1711.5L1754.06 1129.73L1798.5 1088.52Z" fill="#AEA8D3"/>
+                <path d="M1641.13 861.285C1683.1 858.374 1692.51 906.409 1691.98 930.79C1682 928.173 1656.89 922.748 1636.31 921.982C1610.58 921.025 1601.54 883.879 1606.16 872.965C1609.86 864.233 1631.01 861.54 1641.13 861.285Z" fill="white"/>
+                <path d="M1862.87 861.285C1820.9 858.374 1811.49 906.409 1812.02 930.79C1822 928.173 1847.11 922.748 1867.69 921.982C1893.42 921.025 1902.46 883.879 1897.84 872.965C1894.14 864.233 1872.99 861.54 1862.87 861.285Z" fill="white"/>
+            </g>
+
+            <defs>
+                <filter id="filter0_d_449_2" x="146.189" y="215.9" width="1509.92" height="726.793" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="-20.9508" dy="17.9578"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_449_2"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_449_2" result="shape"/>
+                </filter>
+                <filter id="filter1_d_449_2" x="1664.55" y="808.298" width="1407.09" height="614.882" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="5.98594" dy="29.9297"/>
+                    <feGaussianBlur stdDeviation="1.79578"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_449_2"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_449_2" result="shape"/>
+                </filter>
+                <filter id="filter2_d_449_2" x="1522.29" y="435.63" width="481.268" height="738.394" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="-2.99297" dy="13.4684"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_449_2"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_449_2" result="shape"/>
+                </filter>
+                <linearGradient id="paint0_linear_449_2" x1="1106.25" y1="465.395" x2="1111.63" y2="1288.19" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#30254C"/>
+                    <stop offset="1" stop-color="#D961F5"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_449_2" x1="2267.25" y1="1085.68" x2="2307.58" y2="1470.61" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#231C30"/>
+                    <stop offset="1" stop-color="#D961F5"/>
+                </linearGradient>
+                <linearGradient id="paint2_linear_449_2" x1="1631.25" y1="849.08" x2="1623.84" y2="1312.36" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#281E39"/>
+                    <stop offset="1" stop-color="#D961F5"/>
+                </linearGradient>
+                <linearGradient id="paint3_linear_449_2" x1="1747.07" y1="482.591" x2="1742.4" y2="985.137" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#DE7FEF"/>
+                    <stop offset="1" stop-color="#7F4989"/>
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <!-- ОЧКИ НА МЫШКЕ -->
+        <img id="batGlasses" class="bat-glasses">
+    </div>
+</section>
+
+<!-- Подвал -->
+<footer class="footer">
+    <div class="info-content">
+        <p class="credits"><span>Выполнила:</span> Пензина Анастасия  25ндиз-2</p>
+        <p class="credits"><span>Куратор:</span> Евдокимов Стас</p>
+        <p class="credits"><span>Технолог:</span> Сыров Юрий</p>
+    </div>
+    <div class="footer-right">
+        <img src="logo.svg" alt="Школа дизайна">
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
